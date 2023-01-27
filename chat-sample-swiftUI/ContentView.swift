@@ -1,9 +1,5 @@
 import SwiftUI
-
-struct Message {
-    let id = UUID()
-    let text: String
-}
+import Amplify
 
 struct ContentView: View {
     var messages: [Message] = [
@@ -17,6 +13,20 @@ struct ContentView: View {
             ForEach(messages, id: \.id) { message in
                 Text(message.text)
             }
+        }
+        .task {
+            await performOnAppear()
+        }
+    }
+    func performOnAppear() async {
+        do {
+            let messages = try await Amplify.DataStore.query(Message.self)
+            for message in messages {
+                print("=== message ===")
+                print("Text: \(message.text)")
+            }
+        } catch {
+            print("Could not query DataStore: \(error)")
         }
     }
 }
