@@ -1,21 +1,23 @@
-//
-//  ContentView.swift
-//  chat-sample-swiftUI
-//
-//  Created by Yuta Shoji on 2023/01/27.
-//
-
 import SwiftUI
 
+struct Message {
+    let id = UUID()
+    let text: String
+}
+
 struct ContentView: View {
+    var messages: [Message] = [
+        Message(text: "aaaa"),
+        Message(text: "bbbbb"),
+        Message(text: "ccccc"),
+    ]
+    var messages2: [String] = ["aaaa", "bbbbbb", "ccccc"]
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        List {
+            ForEach(messages, id: \.id) { message in
+                Text(message.text)
+            }
         }
-        .padding()
     }
 }
 
