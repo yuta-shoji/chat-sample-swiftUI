@@ -5,31 +5,53 @@ struct ContentView: View {
     @EnvironmentObject var modelData: ModelData
     
     var body: some View {
-        List {
-            ForEach(modelData.messages, id: \.id) { message in
-                Text(message.text)
+        VStack {
+            
+            Button {
+                Task { await createMessage() }
+            } label: {
+                Text("Create")
+            }
+            
+            List {
+                
+                ForEach(modelData.messages, id: \.id) { message in
+                    Text(message.text)
+                }
+            }
+            .task {
+                await performOnAppear()
+                await subscribeMessages()
             }
         }
-        .task {
-            await performOnAppear()
-            await subscribeMessages()
+    }
+    
+    func createMessage() async {
+        do {
+            let newMessage = Message(text: "Amplifyなんてきらい")
+            let result = try await Amplify.API.mutate(request: .create(newMessage))
+            
+            switch result {
+            case .success(let message):
+                modelData.messages.append(Message(text: "Amplifyなんてきらい"))
+                print("Success create new message: [\(message)].")
+            case .failure(let error):
+                print("Failer: \(error.errorDescription)")
+            }
+        } catch {
+            print("Could not query DataStore: \(error)")
         }
     }
     
     func performOnAppear() async {
-        let request = GraphQLRequest<Message>.list(Message.self, where: true as? QueryPredicate, limit: 100)
-        
         do {
-            //            let item = Message(text: "fizzbuzz")
-            //            var result = try await Amplify.API.mutate(request: .create(item))
-            //            print(result)
-            let result = try await Amplify.API.query(request: request)
+            let result = try await Amplify.API.query(request: .list(Message.self, where: nil))
             switch result {
             case .success(let results):
-                print("succes!!!!")
                 modelData.messages = Array(results)
+                print("Success: get all message")
             case .failure(let error):
-                print("failer\(error.errorDescription)")
+                print("Failer: \(error.errorDescription)")
             }
         } catch {
             print("Could not query DataStore: \(error)")
@@ -46,11 +68,11 @@ struct ContentView: View {
                     
                     switch mutationEvent.mutationType {
                     case "create":
-                        print("Created:\(message)")
+                        print("Created: \(message)")
                     case "update":
-                        print("Uppdated:\(message)")
+                        print("Uppdated: \(message)")
                     case "delete":
-                        print("Delete:\(message)")
+                        print("Delete: \(message)")
                     default:
                         break
                     }
