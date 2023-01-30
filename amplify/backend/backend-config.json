@@ -1,20 +1,22 @@
 {
   "api": {
     "amplifyDatasource": {
-      "service": "AppSync",
-      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
       "output": {
         "authConfig": {
           "additionalAuthenticationProviders": [],
           "defaultAuthentication": {
-            "authenticationType": "API_KEY",
             "apiKeyConfig": {
-              "description": "",
-              "apiKeyExpirationDays": 7
-            }
+              "apiKeyExpirationDate": "2024-01-25T02:54:34.611Z",
+              "apiKeyExpirationDays": 360,
+              "description": "chat sample api key"
+            },
+            "authenticationType": "API_KEY"
           }
         }
-      }
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "AppSync"
     }
   }
 }

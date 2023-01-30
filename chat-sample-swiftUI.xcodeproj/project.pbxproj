@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A87FD652987923A0008FCA4 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A87FD642987923A0008FCA4 /* ModelData.swift */; };
 		3AA7885F298372DF0051B9CD /* chat_sample_swiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA7885E298372DF0051B9CD /* chat_sample_swiftUIApp.swift */; };
 		3AA78861298372DF0051B9CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA78860298372DF0051B9CD /* ContentView.swift */; };
 		3AA78863298372E00051B9CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AA78862298372E00051B9CD /* Assets.xcassets */; };
@@ -42,8 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		06F47FB3BE73C344BC8C7325 /* AmplifyModels.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; lastKnownFileType = sourcecode.swift; name = AmplifyModels.swift; path = amplify/generated/models/AmplifyModels.swift; sourceTree = "<group>"; };
-		36C816C5700B2577BD56B1E0 /* Message+Schema.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; lastKnownFileType = sourcecode.swift; name = "Message+Schema.swift"; path = "amplify/generated/models/Message+Schema.swift"; sourceTree = "<group>"; };
+		06F47FB3BE73C344BC8C7325 /* AmplifyModels.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = AmplifyModels.swift; path = amplify/generated/models/AmplifyModels.swift; sourceTree = "<group>"; };
+		36C816C5700B2577BD56B1E0 /* Message+Schema.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = "Message+Schema.swift"; path = "amplify/generated/models/Message+Schema.swift"; sourceTree = "<group>"; };
+		3A87FD642987923A0008FCA4 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		3AA7885B298372DF0051B9CD /* chat-sample-swiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "chat-sample-swiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AA7885E298372DF0051B9CD /* chat_sample_swiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chat_sample_swiftUIApp.swift; sourceTree = "<group>"; };
 		3AA78860298372DF0051B9CD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,7 +58,7 @@
 		3AA7887B298372E00051B9CD /* chat_sample_swiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chat_sample_swiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		60F58BA95A7BB1CE62D9FF31 /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
 		8E7BDCB55E70862F386A2E45 /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
-		EC1A0E0AA506BDBA92D5B268 /* Message.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; lastKnownFileType = sourcecode.swift; name = Message.swift; path = amplify/generated/models/Message.swift; sourceTree = "<group>"; };
+		EC1A0E0AA506BDBA92D5B268 /* Message.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Message.swift; path = amplify/generated/models/Message.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				3AA7885E298372DF0051B9CD /* chat_sample_swiftUIApp.swift */,
+				3A87FD642987923A0008FCA4 /* ModelData.swift */,
 				3AA78860298372DF0051B9CD /* ContentView.swift */,
 				3AA78862298372E00051B9CD /* Assets.xcassets */,
 				3AA78864298372E00051B9CD /* Preview Content */,
@@ -309,6 +312,7 @@
 				8CB1833B9A4EA2A9E71CC95E /* AmplifyModels.swift in Sources */,
 				EB1A98352C8D8E03EFEE4EAD /* Message+Schema.swift in Sources */,
 				81B09ABD9CC42848FAE536EF /* Message.swift in Sources */,
+				3A87FD652987923A0008FCA4 /* ModelData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
