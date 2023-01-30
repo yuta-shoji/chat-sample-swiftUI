@@ -4,17 +4,8 @@ import Amplify
 struct ContentView: View {
     @EnvironmentObject var modelData: ModelData
     
-    func getMessages() async {
-        do {
-            modelData.messages = try await Amplify.DataStore.query(Message.self)
-        } catch {
-            print("Could not query DataStore: \(error)")
-        }
-    }
-    
     var body: some View {
         List {
-            Text("hoge")
             ForEach(modelData.messages, id: \.id) { message in
                 Text(message.text)
             }

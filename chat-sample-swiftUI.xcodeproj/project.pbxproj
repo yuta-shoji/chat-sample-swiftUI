@@ -99,6 +99,14 @@
 			name = AmplifyModels;
 			sourceTree = "<group>";
 		};
+		3A3978802987CA1E00F30E3A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3A87FD642987923A0008FCA4 /* ModelData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		3AA78852298372DF0051B9CD = {
 			isa = PBXGroup;
 			children = (
@@ -124,8 +132,8 @@
 		3AA7885D298372DF0051B9CD /* chat-sample-swiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				3A3978802987CA1E00F30E3A /* Model */,
 				3AA7885E298372DF0051B9CD /* chat_sample_swiftUIApp.swift */,
-				3A87FD642987923A0008FCA4 /* ModelData.swift */,
 				3AA78860298372DF0051B9CD /* ContentView.swift */,
 				3AA78862298372E00051B9CD /* Assets.xcassets */,
 				3AA78864298372E00051B9CD /* Preview Content */,
