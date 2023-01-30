@@ -2,31 +2,27 @@ import SwiftUI
 import Amplify
 
 struct ContentView: View {
-//    @EnvironmentObject var modelData: ModelData
-//    var messages: [Message] = []
+    @EnvironmentObject var modelData: ModelData
     
-    //    func getMessages() async {
-    //        print("++++++++++++++++++++++++++++")
-    //        do {
-    //            modelData.messages = try await Amplify.DataStore.query(Message.self)
-    //            print("==========================================================")
-    //            print(modelData.messages)
-    //        } catch {
-    //            print("Could not query DataStore: \(error)")
-    //        }
-    //    }
+    func getMessages() async {
+        do {
+            modelData.messages = try await Amplify.DataStore.query(Message.self)
+        } catch {
+            print("Could not query DataStore: \(error)")
+        }
+    }
     
     var body: some View {
         List {
             Text("hoge")
-//            ForEach(messages, id: \.id) { message in
-//                Text(message.text)
-//            }
+            ForEach(modelData.messages, id: \.id) { message in
+                Text(message.text)
+            }
         }
-//        .task {
-//            await performOnAppear()
-//            await subscribeMessages()
-//        }
+        .task {
+            await performOnAppear()
+            await subscribeMessages()
+        }
     }
     
     func performOnAppear() async {
@@ -40,11 +36,7 @@ struct ContentView: View {
             switch result {
             case .success(let results):
                 print("succes!!!!")
-//                messages = Array(results)
-//                for message in messages {
-//                    print("=== message ===")
-//                    print("Text: \(message.text)")
-//                }
+                modelData.messages = Array(results)
             case .failure(let error):
                 print("failer\(error.errorDescription)")
             }
@@ -84,6 +76,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-//            .environmentObject(ModelData())
+            .environmentObject(ModelData())
     }
 }
