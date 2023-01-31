@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3A87FD652987923A0008FCA4 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A87FD642987923A0008FCA4 /* ModelData.swift */; };
+		3A91A4F4298889120078AE0F /* MessageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A91A4F3298889120078AE0F /* MessageRow.swift */; };
+		3A91A4F629888A140078AE0F /* MessageList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A91A4F529888A140078AE0F /* MessageList.swift */; };
 		3AA7885F298372DF0051B9CD /* chat_sample_swiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA7885E298372DF0051B9CD /* chat_sample_swiftUIApp.swift */; };
 		3AA78861298372DF0051B9CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA78860298372DF0051B9CD /* ContentView.swift */; };
 		3AA78863298372E00051B9CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AA78862298372E00051B9CD /* Assets.xcassets */; };
@@ -46,6 +48,8 @@
 		06F47FB3BE73C344BC8C7325 /* AmplifyModels.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = AmplifyModels.swift; path = amplify/generated/models/AmplifyModels.swift; sourceTree = "<group>"; };
 		36C816C5700B2577BD56B1E0 /* Message+Schema.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = "Message+Schema.swift"; path = "amplify/generated/models/Message+Schema.swift"; sourceTree = "<group>"; };
 		3A87FD642987923A0008FCA4 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		3A91A4F3298889120078AE0F /* MessageRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRow.swift; sourceTree = "<group>"; };
+		3A91A4F529888A140078AE0F /* MessageList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageList.swift; sourceTree = "<group>"; };
 		3AA7885B298372DF0051B9CD /* chat-sample-swiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "chat-sample-swiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AA7885E298372DF0051B9CD /* chat_sample_swiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chat_sample_swiftUIApp.swift; sourceTree = "<group>"; };
 		3AA78860298372DF0051B9CD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -134,6 +138,8 @@
 			children = (
 				3A3978802987CA1E00F30E3A /* Model */,
 				3AA7885E298372DF0051B9CD /* chat_sample_swiftUIApp.swift */,
+				3A91A4F3298889120078AE0F /* MessageRow.swift */,
+				3A91A4F529888A140078AE0F /* MessageList.swift */,
 				3AA78860298372DF0051B9CD /* ContentView.swift */,
 				3AA78862298372E00051B9CD /* Assets.xcassets */,
 				3AA78864298372E00051B9CD /* Preview Content */,
@@ -319,6 +325,8 @@
 				3AA7885F298372DF0051B9CD /* chat_sample_swiftUIApp.swift in Sources */,
 				8CB1833B9A4EA2A9E71CC95E /* AmplifyModels.swift in Sources */,
 				EB1A98352C8D8E03EFEE4EAD /* Message+Schema.swift in Sources */,
+				3A91A4F4298889120078AE0F /* MessageRow.swift in Sources */,
+				3A91A4F629888A140078AE0F /* MessageList.swift in Sources */,
 				81B09ABD9CC42848FAE536EF /* Message.swift in Sources */,
 				3A87FD652987923A0008FCA4 /* ModelData.swift in Sources */,
 			);
