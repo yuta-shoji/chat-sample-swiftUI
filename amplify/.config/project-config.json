@@ -1,8 +1,8 @@
 {
-  "projectName": "chat-sample-swiftUI",
-  "version": "3.1",
-  "frontend": "ios",
   "providers": [
     "awscloudformation"
-  ]
+  ],
+  "projectName": "chatsampleswiftUI",
+  "version": "3.1",
+  "frontend": "ios"
 }

@@ -46,6 +46,7 @@
 
 /* Begin PBXFileReference section */
 		06F47FB3BE73C344BC8C7325 /* AmplifyModels.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = AmplifyModels.swift; path = amplify/generated/models/AmplifyModels.swift; sourceTree = "<group>"; };
+		112A3F1D2988B9F3002FF4A4 /* chat-sample-swiftUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "chat-sample-swiftUI.entitlements"; sourceTree = "<group>"; };
 		36C816C5700B2577BD56B1E0 /* Message+Schema.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = "Message+Schema.swift"; path = "amplify/generated/models/Message+Schema.swift"; sourceTree = "<group>"; };
 		3A87FD642987923A0008FCA4 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		3A91A4F3298889120078AE0F /* MessageRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRow.swift; sourceTree = "<group>"; };
@@ -136,6 +137,7 @@
 		3AA7885D298372DF0051B9CD /* chat-sample-swiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				112A3F1D2988B9F3002FF4A4 /* chat-sample-swiftUI.entitlements */,
 				3A3978802987CA1E00F30E3A /* Model */,
 				3AA7885E298372DF0051B9CD /* chat_sample_swiftUIApp.swift */,
 				3A91A4F3298889120078AE0F /* MessageRow.swift */,
@@ -484,10 +486,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "chat-sample-swiftUI/chat-sample-swiftUI.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"chat-sample-swiftUI/Preview Content\"";
-				DEVELOPMENT_TEAM = 4W9BJUAY8P;
+				DEVELOPMENT_TEAM = 575NKNQV6Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -500,7 +503,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sjyt.chat-sample-swiftUI";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dig-oneup.chat-sample-swiftUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -513,10 +516,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "chat-sample-swiftUI/chat-sample-swiftUI.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"chat-sample-swiftUI/Preview Content\"";
-				DEVELOPMENT_TEAM = 4W9BJUAY8P;
+				DEVELOPMENT_TEAM = 575NKNQV6Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -529,7 +533,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sjyt.chat-sample-swiftUI";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dig-oneup.chat-sample-swiftUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

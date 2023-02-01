@@ -10,11 +10,6 @@
       "StackName": "amplify-chat-sample-swiftui-dev-112124",
       "StackId": "arn:aws:cloudformation:ap-northeast-1:726646423352:stack/amplify-chat-sample-swiftui-dev-112124/cccb76e0-a044-11ed-bb5f-060908101c5b",
       "AmplifyAppId": "d3tyjj6zrnfgde"
-    },
-    "categories": {
-      "api": {
-        "amplifyDatasource": {}
-      }
     }
   }
 }
